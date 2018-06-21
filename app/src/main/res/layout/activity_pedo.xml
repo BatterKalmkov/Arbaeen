@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="#d7edec"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.example.jonathan.arbaeen.style.FontTextView
+        android:layout_width="match_parent"
+        android:text="گوشی را در جیب شلوار خود گذاشته و شروع به راه رفتن کنید"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedo_help"
+        android:textColor="#f20000"
+        android:background="#d7edec"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@id/pedo_help"
+        android:id="@+id/pedo_img"
+        android:src="@drawable/pedoback"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/pedo_img"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <com.example.jonathan.arbaeen.style.FontTextView
+        android:id="@+id/pedo_steps"
+        android:text="0"
+        android:background="@drawable/rekat1"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        />
+    <com.example.jonathan.arbaeen.style.FontTextView
+        android:text="تعداد قدم ها"
+        android:layout_gravity="center"
+        android:textColor="#054a3c"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/foot"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:id="@+id/pedo_totalsteps"
+            android:text=""
+            android:textColor="#054a3c"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

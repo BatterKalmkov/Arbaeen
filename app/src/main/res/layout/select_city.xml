@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar_layout"/>
+    </FrameLayout>
+    <com.example.jonathan.arbaeen.style.FontEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:lines="1"
+        android:hint="جستجو"
+        android:padding="8dp"
+        android:textColor="#5b807e"
+        android:layoutDirection="rtl"
+        android:background="#e5fffe"
+        android:maxLines="1"
+        android:id="@+id/select_city_search"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/select_city_recycler"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

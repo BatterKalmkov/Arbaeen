@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_100"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.arbaeen.ResetpassActivity">
+    <com.example.jonathan.arbaeen.style.FontTextView
+        android:layout_width="match_parent"
+        android:id="@+id/reset_title"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_height="wrap_content"
+        android:text="برای ریست کردن پسورد آدرس ایمیل خود را وارد کنید"
+        />
+    <com.example.jonathan.arbaeen.style.FontTextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/reset_title"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="اگر ایمیل را دریافت نکردید پوشه SPAM ایمیل خود را چک کنید"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:theme="@style/TextLabel">
+
+            <com.example.jonathan.arbaeen.style.EnEditText
+                android:id="@+id/reset_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="ایمیل"
+                android:digits="@string/email"
+                android:maxLength="40"
+                android:padding="7dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/reset_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape9"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="بررسی"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

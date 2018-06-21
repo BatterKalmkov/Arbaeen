@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/curve_shape2"
+              android:orientation="vertical" >
+
+    <com.example.jonathan.arbaeen.style.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="لطفا یکی از گزینه های زیر را انتخاب کنید"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/custom_azkar"
+            android:layout_width="match_parent"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:layout_marginBottom="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="اذکار"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/custom_doa"
+            android:layout_width="match_parent"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clickable="true"
+
+            android:layout_marginBottom="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="ادعیه و زیارت"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/custom_nohe"
+            android:layout_width="match_parent"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:layout_marginBottom="5dp"
+            android:text="نوحه"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/custom_adab"
+            android:layout_width="match_parent"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clickable="true"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_marginBottom="5dp"
+            android:text="آداب و اعمال"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

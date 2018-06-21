@@ -1,0 +1,387 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="10"
+             tools:context="com.example.jonathan.arbaeen.TodayFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/today"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="0dp">
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/todayshape"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/today_today"
+            android:gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Display2"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:id="@+id/today_today"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="امروز"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/todayshape"
+                android:id="@+id/today_date1"
+                android:textColor="@color/white"
+                android:gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Display2"/>
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="امروز"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/todayshape"
+                android:id="@+id/today_date2"
+                android:textColor="@color/white"
+                android:gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Display2"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#dafff7"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/today_pickdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/shape4"
+                android:paddingRight="4dp"
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:drawableLeft="@mipmap/ic_pickdate"
+                android:textColor="@color/white"
+                android:text="تقویم"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/today_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:background="@drawable/shape4"
+                android:paddingRight="4dp"
+                android:drawableLeft="@mipmap/ic_menu"
+                android:textColor="@color/white"
+                android:text="منو"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/today_do"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:background="@drawable/shape4"
+                android:paddingRight="4dp"
+                android:drawableLeft="@mipmap/ic_location"
+                android:textColor="@color/white"
+                android:text="مکان"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/today_date"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:paddingLeft="165dp"
+        android:paddingTop="10dp"
+        android:paddingRight="165dp"
+        android:background="@drawable/todaybg"
+        android:orientation="vertical"
+        android:weightSum="11.5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="1.4"
+            android:layout_height="0dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:layout_weight="1">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/today_loc"
+                android:text="@string/azansobh"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="top"
+            android:layout_weight="1">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/today_distance"
+                android:text="@string/azansobh"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.7">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/azansobh"
+                android:textColor="#141414"/>
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:id="@+id/today_azansobh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.7">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/toloaftab"
+                android:textColor="#141414"/>
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:id="@+id/today_toloaftab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.7">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/azanzohr"
+                android:textColor="#141414"/>
+
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:id="@+id/today_azanzohr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.7"
+          >
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/asr"
+                android:textColor="#141414"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"/>
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:id="@+id/today_asr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.7">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/ghorobaftab"
+                android:textColor="#141414"/>
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:id="@+id/today_ghorobaftab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.7">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/azanmaghreb"
+                android:textColor="#141414"/>
+
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:id="@+id/today_azanmaghreb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.7">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/esha"
+                android:textColor="#141414"/>
+
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:id="@+id/today_esha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.7">
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/nimeshab"
+                android:textColor="#141414"/>
+
+
+
+            <com.example.jonathan.arbaeen.style.FontTextView
+                android:id="@+id/today_nimeshab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#141414"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

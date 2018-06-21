@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/curve_shap"
+        android:layout_height="wrap_content">
+
+    <com.example.jonathan.arbaeen.style.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مدیر پروژه:"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:gravity="right"
+        />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="دکتر علی حنانی"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="right"
+            />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="گروه پیاده سازی:"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="right"
+            />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="شهاب عظیمی"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="right"
+            />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="مازیار گرامی"
+            android:textColor="@color/colorPrimary"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="right"
+            />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مشاورین مذهبی:"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="right"
+            />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حجت الاسلام و المسلمین ابوالفضل اله وردی"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="right"
+            />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حجت الاسلام و المسلمین نعمت شکری"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="right"
+            />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="با تشکر از حمایت های بی دریغ دکتر نوذر قنبری، ریاست محترم دانشگاه آزاد اسلامی واحد کرمانشاه"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/red"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="center"
+            />
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حامیان:"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="right"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/azadlogo"/>
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="دانشگاه آزاد اسلامی واحد کرمانشاه"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ict"/>
+        <com.example.jonathan.arbaeen.style.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اداره کل فناوری اطلاعات و ارتباطات استان کرمانشاه"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:gravity="center"
+            />
+        </LinearLayout>
+    </ScrollView>
