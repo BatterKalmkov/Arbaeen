@@ -45,6 +45,11 @@ So if you are interested in this app and want to collaborate you if you have any
 
 </p>
 
+# Developed By
+
+* Shahab Azimi
+ * [shahabazimi.ir](http://shahabazimi.ir) - <azimishahab@gmail.com>
+
 # License
    Copyright 2018 Shahab Azimi
 
