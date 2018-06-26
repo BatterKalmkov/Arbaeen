@@ -1,5 +1,5 @@
 # Arbaeen
-Arbaeen is a full feature app for those how want to have a trip to IRAQ to visit religious places, some of the features are:
+Arbaeen is a full feature app for those who want to have a trip to IRAQ to visit religious places, some of the features are:
 1. Today’s calendar with Salat times
 2. Gheble finder
 3. Mosques near me (this feature is not working any longer because google maps is no free anymore and I don’t have a billing account, so if you have you know what to do…)
